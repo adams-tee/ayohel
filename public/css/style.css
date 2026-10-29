@@ -1,0 +1,116 @@
+   /* --- Retro MySpace/Windows 98 Global Reset --- */
+        body {
+            background-color: #e5e5e5; /* Classic MySpace background placeholder */
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        /* --- AIM Chat Window Styling --- */
+        #aim-window {
+            width: 350px;
+            background-color: #d4d0c8; /* Classic Windows 98 Gray */
+            border: 2px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .aim-header {
+            background: linear-gradient(90deg, #000080, #1084d0);
+            color: white;
+            padding: 3px 5px;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .aim-header-controls span {
+            background-color: #d4d0c8;
+            color: black;
+            border: 1px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
+            padding: 0 4px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 2px;
+        }
+
+        .aim-body {
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* --- Chat History Area --- */
+        #chat-history {
+            height: 250px;
+            background-color: white;
+            border: 2px solid;
+            border-color: #808080 #ffffff #ffffff #808080;
+            padding: 5px;
+            overflow-y: auto;
+            font-size: 13px;
+        }
+
+        .message { margin-bottom: 8px; }
+        .bot-name { color: #0000ff; font-weight: bold; font-family: 'Times New Roman', Times, serif; }
+        .user-name { color: #ff0000; font-weight: bold; font-family: 'Times New Roman', Times, serif; }
+        .system-msg { color: #808080; font-style: italic; }
+
+        /* --- Toolbar / Quick Actions --- */
+        .aim-toolbar {
+            display: flex;
+            gap: 5px;
+            justify-content: space-between;
+        }
+
+        .aim-toolbar button {
+            flex: 1;
+            background-color: #d4d0c8;
+            border: 2px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
+            font-size: 11px;
+            padding: 4px;
+            cursor: pointer;
+        }
+        .aim-toolbar button:active {
+            border-color: #808080 #ffffff #ffffff #808080;
+        }
+
+        /* --- Text Input Area --- */
+        .aim-input-area {
+            display: flex;
+            gap: 5px;
+        }
+
+        #chat-input {
+            flex: 1;
+            height: 40px;
+            resize: none;
+            border: 2px solid;
+            border-color: #808080 #ffffff #ffffff #808080;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 4px;
+        }
+
+        #send-btn {
+            background-color: #d4d0c8;
+            border: 2px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0 10px;
+        }
+        #send-btn:active {
+            border-color: #808080 #ffffff #ffffff #808080;
+        }

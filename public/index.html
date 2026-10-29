@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Tori</title>
+   
+</head>
+<body>
+
+    <!-- Retro AIM Chat Interface -->
+    <div id="aim-window">
+        <div class="aim-header">
+            <span>Ay Oh El Instant Message </span>
+            <div class="aim-header-controls">
+                <span>_</span><span>☐</span><span>X</span>
+            </div>
+        </div>
+        
+        <div class="aim-body">
+            <!-- Chat text goes here -->
+            <div id="chat-history"></div>
+
+            <!-- Quick Action Menu -->
+            <div class="aim-toolbar">
+                <button onclick="handleQuickAction('resume')">📄 Resume</button>
+                <button onclick="handleQuickAction('youtube')">▶️ YouTube</button>
+                <button onclick="handleQuickAction('github')">🐙 GitHub</button>
+                <button onclick="handleQuickAction('projects')">🐙 Projects</button>
+
+            </div>
+
+            <!-- User Text Input -->
+            <div class="aim-input-area">
+                <textarea id="chat-input" placeholder="Ask about my tech stack..."></textarea>
+                <button id="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Frontend JavaScript -->
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
