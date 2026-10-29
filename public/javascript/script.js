@@ -42,7 +42,7 @@
     } else if (action === 'projects') {
         appendMessage("System", "Opening Projects in a new tab...", "system-msg");
         // Replace with your actual projects URL
-        window.open('https://github.com/adams-tee?tab=repositories', '_blank');
+        window.open('/projects.html', '_blank');
     }
 }
 
@@ -98,4 +98,24 @@
                 document.getElementById(typingId).remove();
                 appendMessage("System", "Warning: Connection timed out. Is someone using the landline?", "system-msg");
             }
+        }
+
+        // PROJECTS HTML //
+        
+            function switchTab(evt, projectId) {
+            // Hide all panels
+            const panels = document.getElementsByClassName("tab-panel");
+            for (let i = 0; i < panels.length; i++) {
+                panels[i].classList.remove("active");
+            }
+
+            // Remove 'active' styling from all tabs
+            const tabs = document.getElementsByClassName("tab");
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+
+            // Show the selected panel and make the clicked tab active
+            document.getElementById(projectId).classList.add("active");
+            evt.currentTarget.classList.add("active");
         }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Tori Adams | Projects.exe</title>
+</head>
+<body>
+
+    <div class="window">
+        <div class="title-bar">
+            <span>Project_Properties.exe</span>
+            <div class="title-bar-controls">
+                <button aria-label="Close" onclick="window.close()">X</button>
+            </div>
+        </div>
+
+        <div class="window-body">
+            <!-- The Tabs -->
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab(event, 'proj-1')">Atkore AI</div>
+                <div class="tab" onclick="switchTab(event, 'proj-2')">ML Bias</div>
+                <div class="tab" onclick="switchTab(event, 'proj-3')">Escrow Planner</div>
+            </div>
+
+            <!-- Panel 1: Atkore -->
+            <div id="proj-1" class="tab-panel active">
+                <h2 class="project-title">Atkore AI Ops Dashboard</h2>
+                <p>Enterprise operations command center built to streamline cloud infrastructure and operational analytics.</p>
+                <div class="tech-stack">
+                    <strong>Tech Stack:</strong> Streamlit, LangGraph, Google Cloud Run, Docker
+                </div>
+                <div class="button-group">
+                    <a href="https://your-atkore-app.onrender.com" target="_blank" class="win-btn">View Live</a>
+                    <a href="https://github.com/your-username/atkore-repo" target="_blank" class="win-btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Panel 2: ML Bias -->
+            <div id="proj-2" class="tab-panel">
+                <h2 class="project-title">ML Bias & Redlining Simulator</h2>
+                <p>Interactive banking chatbot demonstrating algorithmic bias, feature scaling, and prompt injection vulnerabilities.</p>
+                <div class="tech-stack">
+                    <strong>Tech Stack:</strong> Local LLMs (Ollama/Llama 3.2), Python, StandardScaler, LogisticRegression
+                </div>
+                <div class="button-group">
+                    <a href="https://one00loans.onrender.com" target="_blank" class="win-btn">View Live</a>
+                    <a href="hhttps://github.com/adams-tee/LoanCalcSkewed" target="_blank" class="win-btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Panel 3: Escrow Planner -->
+            <div id="proj-3" class="tab-panel">
+                <h2 class="project-title">AI Drink Makerr</h2>
+                <p>AI application providing drink recipes based on ingredients.</p>
+                <div class="tech-stack">
+                    <strong>Tech Stack:</strong> Python, Streamlit, Pandas
+                </div>
+                <div class="button-group">
+                    <a href="https://drnkr-ai.onrender.com" target="_blank" class="win-btn">View Live</a>
+                    <a href="https://github.com/stayflyndev/drnkr.ai" target="_blank" class="win-btn">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Vanilla JS to make the tabs functional -->
+   <script src="/javascript/script.js"></script>
+</body>
+</html>

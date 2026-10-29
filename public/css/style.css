@@ -114,3 +114,171 @@
         #send-btn:active {
             border-color: #808080 #ffffff #ffffff #808080;
         }
+
+
+        /* **** PROJECT CSS ******* */
+
+            body {
+            background-color: #008080; /* Classic Win98 Desktop Teal */
+            font-family: Tahoma, 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Main Window */
+        .window {
+            width: 100%;
+            max-width: 550px;
+            background-color: #c0c0c0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+            box-shadow: inset -1px -1px #808080, inset 1px 1px #dfdfdf;
+            padding: 2px;
+        }
+
+        /* Title Bar */
+        .title-bar {
+            background: linear-gradient(90deg, #000080, #1084d0);
+            color: white;
+            padding: 3px 5px;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title-bar-controls button {
+            width: 16px;
+            height: 14px;
+            background: #c0c0c0;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #000000;
+            border-bottom: 1px solid #000000;
+            box-shadow: inset -1px -1px #808080;
+            cursor: default;
+        }
+        .title-bar-controls button:active {
+            border-top: 1px solid #000000;
+            border-left: 1px solid #000000;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+            box-shadow: inset 1px 1px #808080;
+        }
+
+        /* Tabs Container */
+        .window-body {
+            padding: 10px;
+        }
+
+        .tabs {
+            display: flex;
+            margin: 0 0 0 5px;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tab {
+            background-color: #c0c0c0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #000000;
+            border-bottom: none;
+            padding: 4px 12px;
+            margin-right: 2px;
+            margin-top: 4px; /* Inactive tabs sit lower */
+            font-family: Tahoma, sans-serif;
+            font-size: 12px;
+            cursor: pointer;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        /* The trick that makes the active tab look connected to the panel */
+        .tab.active {
+            margin-top: 0;
+            padding-bottom: 6px;
+            margin-bottom: -2px; /* Pulls it down over the panel border */
+            z-index: 3;
+            background-color: #c0c0c0;
+        }
+
+        /* Tab Content Panel */
+        .tab-panel {
+            background-color: #c0c0c0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #808080;
+            border-bottom: 2px solid #808080;
+            box-shadow: 1px 1px #000000;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            min-height: 200px;
+            display: none; /* Hidden by default */
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        /* Inner Content Styling */
+        .project-title {
+            margin-top: 0;
+            font-size: 18px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #808080;
+            padding-bottom: 5px;
+        }
+
+        .tech-stack {
+            background: #ffffff;
+            border-top: 2px solid #808080;
+            border-left: 2px solid #808080;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            margin: 15px 0;
+        }
+
+        /* Win98 Action Buttons */
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .win-btn {
+            background-color: #c0c0c0;
+            color: #000000;
+            font-family: Tahoma, sans-serif;
+            font-size: 12px;
+            padding: 5px 15px;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+            box-shadow: inset -1px -1px #808080, inset 1px 1px #dfdfdf;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .win-btn:active {
+            border-top: 2px solid #000000;
+            border-left: 2px solid #000000;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            box-shadow: inset 1px 1px #808080;
+            padding: 6px 14px 4px 16px;
+        }
