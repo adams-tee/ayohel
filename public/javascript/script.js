@@ -30,7 +30,7 @@
     if (action === 'resume') {
         appendMessage("System", "Opening Resume in a new tab...", "system-msg");
         // Make sure this matches the exact name of the PDF in your public/assets folder
-        window.open('/assets/toriresume.pdf', '_blank');
+        window.open('/assets/t.pdf', '_blank');
     } else if (action === 'youtube') {
         appendMessage("System", "Opening YouTube Channel in a new tab...", "system-msg");
         // Replace with your actual YouTube URL
